@@ -1,0 +1,63 @@
+JANE SMITH
+Email: jane.smith@email.com | Phone: +1-555-0123 | LinkedIn: linkedin.com/in/janesmith
+
+EDUCATION
+Bachelor of Technology in Computer Science and Engineering
+ABC Institute of Technology, City, State
+August 2020 - May 2024
+CGPA: 8.9/10.0
+
+TECHNICAL SKILLS
+Programming Languages: Python, Java, C++, JavaScript
+Web Technologies: React, Node.js, Express, MongoDB
+Tools & Platforms: Git, Docker, AWS, Jupyter
+
+EXPERIENCE
+Software Development Intern
+TechCorp Solutions, Summer 2023
+- Developed RESTful APIs using Node.js and Express
+- Implemented authentication system with JWT
+- Collaborated with team of 5 developers on microservices architecture
+- Improved application performance by 30%
+
+Data Science Intern
+DataAnalytics Inc., Winter 2022
+- Built machine learning models for customer churn prediction
+- Performed data analysis on datasets with 100K+ records
+- Created data visualizations using Matplotlib and Seaborn
+
+PROJECTS
+1. Smart Campus Management System
+   - Built a full-stack web application for campus administration
+   - Technologies: React, Node.js, MongoDB, Express
+   - Implemented role-based access control and real-time notifications
+
+2. AI-Powered Chatbot for Customer Support
+   - Developed NLP-based chatbot using Python and TensorFlow
+   - Achieved 85% accuracy in intent classification
+   - Integrated with Telegram and WhatsApp APIs
+
+3. E-Commerce Recommendation Engine
+   - Created collaborative filtering algorithm for product recommendations
+   - Processed 50K+ user interactions
+   - Improved click-through rate by 25%
+
+4. IoT-Based Home Automation System
+   - Designed and implemented smart home system using Raspberry Pi
+   - Built mobile app for remote control and monitoring
+
+ACHIEVEMENTS & EXTRACURRICULAR ACTIVITIES
+- Winner, National-level Hackathon 2023 (Team of 4)
+- Runner-up, College Coding Competition 2022
+- Technical Head, Computer Science Club (2022-2023)
+- Volunteer, NGO Teaching Initiative - Taught programming to underprivileged students
+- Captain, College Basketball Team (2021-2022)
+- Published research paper on "Machine Learning in Healthcare" in IEEE Conference
+
+CERTIFICATIONS
+- AWS Certified Cloud Practitioner
+- Deep Learning Specialization (Coursera)
+- Google Data Analytics Certificate
+
+LANGUAGES
+English (Fluent), Hindi (Native), Spanish (Intermediate)
