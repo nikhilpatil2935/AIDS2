@@ -663,8 +663,12 @@ with st.sidebar:
     st.image("https://img.icons8.com/clouds/200/000000/student-male.png", width=150)
     st.markdown("### ⚙️ Configuration")
     
-    model_choice = st.selectbox("🤖 Choose AI Model", list(AVAILABLE_MODELS.keys()),
-                               help="Select the machine learning model for prediction")
+    model_choice = st.selectbox(
+        "🤖 Choose AI Model", 
+        list(AVAILABLE_MODELS.keys()),
+        index=0,  # Default to Random Forest
+        help="Select the machine learning model for prediction. All models are selectable - choose any option from the dropdown."
+    )
     model_path = AVAILABLE_MODELS[model_choice]
     
     # Show loading spinner while loading model
