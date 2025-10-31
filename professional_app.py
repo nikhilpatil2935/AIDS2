@@ -683,10 +683,10 @@ with st.sidebar:
         
         # Check if it's a multi-input Keras model and show appropriate message
         if model_meta.get("type") == "keras" and hasattr(model_obj, 'input_shape') and isinstance(model_obj.input_shape, list):
-            st.warning("⚠️ **Hybrid Model Requirements:**")
-            st.info("📄 **Resume Upload Required** - This model uses text embeddings from your resume for predictions. Please upload a resume (PDF/TXT) in the Resume Scanner section below.")
+            st.success("✅ **Hybrid Neural Network Active**")
+            st.info("📄 **Next Step:** Scroll down to upload your resume in the **Resume Scanner** section for full model functionality.")
         else:
-            st.info("💡 Upload a resume for better auto-fill, or manually adjust sliders.")
+            st.info("💡 Upload a resume for auto-fill, or manually adjust the sliders below.")
 
     st.markdown("---")
     st.markdown("### 📊 Display Options")
@@ -698,15 +698,23 @@ with st.sidebar:
     st.markdown("### 📖 Quick Guide")
     with st.expander("How to use this app"):
         st.markdown("""
-        **Step 1:** Upload your resume (optional) for auto-fill  
-        **Step 2:** Adjust profile sliders if needed  
-        **Step 3:** Click 'Predict Placement'  
-        **Step 4:** Review detailed insights & recommendations
+        **For Random Forest & AdaBoost Models:**
+        1. Adjust profile sliders below  
+        2. Click 'Predict Placement'  
+        3. Review results & insights
         
-        **Models Available:**
-        - **Random Forest**: Best for accuracy
-        - **AdaBoost**: Good ensemble model
-        - **Hybrid NN**: Advanced (needs resume text)
+        **For Hybrid Neural Network:**
+        1. **Upload resume** in Resume Scanner section ⬇️  
+        2. Auto-extracted data fills the sliders  
+        3. Click 'Predict Placement'  
+        4. Get advanced AI analysis
+        
+        ---
+        
+        **Model Comparison:**
+        - **Random Forest**: Fast & accurate (no resume needed) ⭐
+        - **AdaBoost**: Ensemble learning (no resume needed)
+        - **Hybrid NN**: Most advanced (resume required) 🚀
         """)
     
     st.markdown("---")
@@ -851,17 +859,22 @@ with main_col2:
     
     # Check if hybrid model is selected and show warning if no resume
     if "Hybrid" in model_choice and not resume_text and not predict_button:
-        st.warning("⚠️ **Hybrid Neural Network Selected**")
+        st.warning("⚠️ **Action Required: Upload Resume for Hybrid Model**")
         st.info("""
-        📄 **Resume Required:** The Hybrid NN model uses advanced text embeddings from your resume.
+        ### 📄 How to Use the Hybrid Neural Network:
         
-        **To use this model:**
-        1. Upload your resume (PDF/TXT) in the Resume Scanner section above
-        2. The app will extract text and generate embeddings automatically
-        3. Then click 'Predict Placement' to get results
+        This advanced model combines **tabular data** + **resume text analysis** for better predictions.
         
-        **Alternative:** Switch to Random Forest or AdaBoost models which work without resume upload.
+        **Step 1:** Scroll up to the **"Smart Resume Scanner"** section  
+        **Step 2:** Upload your resume (PDF or TXT format)  
+        **Step 3:** The app will automatically extract your information  
+        **Step 4:** Come back here and click **'Predict Placement'**
+        
+        **Don't have a resume?** Switch to **Random Forest** or **AdaBoost** models - they work great without resume upload!
         """)
+        
+        # Add helpful button to scroll up
+        st.markdown("⬆️ **Look for the Resume Scanner section above** ⬆️")
     
     # Placeholder for results
     result_container = st.container()
